@@ -31,7 +31,7 @@ module Rat
 
   # Pass an integer id returned from add or list.
   def self.remove(job)
-    `at -r #{job}`
+    `atrm #{job}`
     $?.exitstatus == 0
   end
 
